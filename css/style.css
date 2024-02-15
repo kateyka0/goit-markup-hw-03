@@ -29,15 +29,12 @@ body {
 }
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px
 }
 .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-   
+   padding: 120px 0;
 }
 .flex {
     display: flex;
@@ -46,6 +43,9 @@ body {
    
 }
  /*navigation*/
+ .header {
+    border-bottom: 1px solid #e7e9fc
+ }
  .Contacts {
     display: flex;
     flex-direction: row;
@@ -65,6 +65,10 @@ body {
 .title-first-name {
     color: #2E2F42;
 }
+.nav {
+    display: flex;
+    align-items: center;
+}
 .page-nav {
     display: flex;
     gap: 40px;
@@ -75,6 +79,7 @@ letter-spacing: 0.02em;
 font-weight: 500;
 color: #2e2f42;
 line-height: 150%;
+padding: 24px 0;
 }
 .page-nav .link-nav:hover,
 .page-nav .link-nav:active,
@@ -84,6 +89,7 @@ color: #404BBF ;
 /*address*/
 .address {
     font-style: normal;
+    
 }
 .address-list {
     display: flex;
@@ -103,6 +109,7 @@ letter-spacing: 0.02em
 /*section 1*/
 .section-first {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 .section-first .title {
     font-size: 56px;
@@ -111,10 +118,9 @@ letter-spacing: 0.02em
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-top: 188px;
     padding-bottom: 48px;
-    padding-right: 316px;
-    padding-left: 316px;
+    max-width: 496px;
+    margin: 0 auto;
 }
 .button {
     font-size: 16px;
@@ -127,9 +133,12 @@ letter-spacing: 0.02em
     padding: 16px 32px;
     margin-bottom: 184px;
     margin-left: 480px;
-    border: 1px solid #4D5AE5 ;
     border-radius: 4px;
-    
+    display: block;
+    min-width: 169px;
+    border: none;
+    height: 56px;
+
 }
 .button:hover,
 .button:focus {
@@ -138,6 +147,17 @@ letter-spacing: 0.02em
 }
 
 /*section 2*/
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+border: 0;
+}
+
 .benefits-list .list {
     width: calc((100% - 72px) / 4);
 }
@@ -148,7 +168,7 @@ font-weight: 500;
 line-height: 120%;
 letter-spacing: 0.02em;
 color: #2e2f42;
-padding-bottom: 8px;
+margin-bottom: 8px;
 }
 .section-second .benefits-list .text-second{
     font-weight: 400;
@@ -160,6 +180,7 @@ padding-bottom: 8px;
 .section-third {
     background-color: #F4F4FD;
 }
+
 .section-third .title-third {
     font-size: 36px;
     line-height: 1.11;
@@ -167,14 +188,17 @@ padding-bottom: 8px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:#2e2f42 ;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .section-third .team-list-li {
 background-color: #FFFFFF;
-border-radius: 10px;
+border-radius: 0px 0px 4px 4px;
 box-shadow: 0px 1px 1px #2e2f422f;
 width: calc((100% - 72px) / 4);
+}
+.personal {
+    padding: 32px 0;
 }
 .section-third .team-list .list-third{
     font-weight: 500;
@@ -182,16 +206,14 @@ width: calc((100% - 72px) / 4);
     line-height: 120%;
     letter-spacing: 0.02em;
     color:#2e2f42 ;
-    padding-top: 32px;
-    padding-bottom: 8px;
     text-align: center;
+    margin-bottom: 8px
 }
 .section-third .team-list .text-third {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
     text-align: center;
 }
 /*section 4*/
@@ -203,14 +225,20 @@ width: calc((100% - 72px) / 4);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:#2e2f42 ;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 .section-fourth .Portfolio-list { 
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 .project {
     width: calc((100% - 48px) / 3);
-    box-shadow: 0px 1px 1px #2e2f422f;
+    
+}
+.program {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .section-fourth .Portfolio-list .list-fourth {
 font-weight: 500;
@@ -218,9 +246,7 @@ font-size: 20px;
 color: #2E2F42;
 line-height: 120%;
 letter-spacing: 0.02em;
-padding-top: 32px;
-padding-left: 16px;
-padding-bottom: 8px;
+margin-bottom: 8px;
 }
 .section-fourth .Portfolio-list .text-fourth {
 font-weight: 400;
@@ -236,6 +262,7 @@ padding-bottom: 32px;
 }
 .footer {
     background-color: #2E2F42;
+
 }
 
 .footer .title-footer {
@@ -246,7 +273,8 @@ padding-bottom: 32px;
     text-transform: uppercase;
     color: #4D5AE5;
     line-height: 117%;
-   
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer .title-second-name {
     color: #f4f4fd;
@@ -257,6 +285,5 @@ padding-bottom: 32px;
     color: #F4F4FD;
     line-height: 150%;
     letter-spacing: 0.02em;
-    padding-top: 16px;
    margin-right: 864px;
 }

@@ -31,7 +31,8 @@ body {
     width: 1158px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px
+    padding: 0 15px;
+    
 }
 .section {
    padding: 120px 0;
@@ -46,11 +47,10 @@ body {
  .header {
     border-bottom: 1px solid #e7e9fc
  }
- .Contacts {
+ 
+ .contacts {
     display: flex;
     flex-direction: row;
-    padding-top: 24px;
-    padding-bottom: 24px;
  }
 .title-first {
     letter-spacing: 0.03em;
@@ -65,7 +65,7 @@ body {
 .title-first-name {
     color: #2E2F42;
 }
-.nav {
+.navigation {
     display: flex;
     align-items: center;
 }
@@ -73,6 +73,9 @@ body {
     display: flex;
     gap: 40px;
     margin-right: 332px;
+}
+.page-li {
+    padding: 24px 0;
 }
 .page-nav .link-nav {
 letter-spacing: 0.02em;
@@ -147,15 +150,18 @@ letter-spacing: 0.02em
 }
 
 /*section 2*/
+
 .visually-hidden {
-position: absolute;
-width: 1px;
-height: 1px;
-margin: -1px;
-padding: 0;
-overflow: hidden;
-clip: rect(0, 0, 0, 0);
-border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .benefits-list .list {
@@ -217,7 +223,7 @@ width: calc((100% - 72px) / 4);
     text-align: center;
 }
 /*section 4*/
-.section-fourth .Portfolio {
+.section-fourth .portfolio {
     font-size: 36px;
     font-weight: 700;
     line-height: 111%;
@@ -227,7 +233,7 @@ width: calc((100% - 72px) / 4);
     color:#2e2f42 ;
     margin-bottom: 72px;
 }
-.section-fourth .Portfolio-list { 
+.section-fourth .portfolio-list { 
     flex-wrap: wrap;
     row-gap: 48px;
 }
@@ -240,7 +246,7 @@ width: calc((100% - 72px) / 4);
     border: 1px solid #e7e9fc;
     border-top: none;
 }
-.section-fourth .Portfolio-list .list-fourth {
+.section-fourth .portfolio-list .list-fourth {
 font-weight: 500;
 font-size: 20px;
 color: #2E2F42;
@@ -248,7 +254,7 @@ line-height: 120%;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
 }
-.section-fourth .Portfolio-list .text-fourth {
+.section-fourth .portfolio-list .text-fourth {
 font-weight: 400;
 line-height: 150%;
 letter-spacing: 0.02em;

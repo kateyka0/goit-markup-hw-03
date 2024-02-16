@@ -50,7 +50,7 @@ body {
  
  .contacts {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
  }
 .title-first {
     letter-spacing: 0.03em;
@@ -121,9 +121,9 @@ letter-spacing: 0.02em
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.02em;
-    padding-bottom: 48px;
     max-width: 496px;
     margin: 0 auto;
+    margin-bottom: 48px;
 }
 .button {
     font-size: 16px;
@@ -134,13 +134,12 @@ letter-spacing: 0.02em
     color: #FFFFFF;
     letter-spacing: 0.04em;
     padding: 16px 32px;
-    margin-bottom: 184px;
-    margin-left: 480px;
     border-radius: 4px;
     display: block;
     min-width: 169px;
     border: none;
     height: 56px;
+    margin: 0 auto;
 
 }
 .button:hover,
@@ -150,18 +149,15 @@ letter-spacing: 0.02em
 }
 
 /*section 2*/
-
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+padding: 0;
+overflow: hidden;
+clip: rect(0, 0, 0, 0);
+border: 0;
 }
 
 .benefits-list .list {
@@ -258,8 +254,7 @@ margin-bottom: 8px;
 font-weight: 400;
 line-height: 150%;
 letter-spacing: 0.02em;
-padding-left: 16px;
-padding-bottom: 32px;
+
 }
 /*footer*/
 .section-footer {

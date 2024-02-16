@@ -50,7 +50,8 @@ body {
  
  .contacts {
     display: flex;
-    flex-direction: row;    
+    flex-direction: row;   
+    align-items: center;
  }
 .title-first {
     letter-spacing: 0.03em;
